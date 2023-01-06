@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Basic Form</title>
+</head>
+
+<body>
+    <form action="./success.html">
+        FullName:<input type="text" placeholder="Mr.akash" name="fullName" required />
+        <br />
+        <br />
+        Employee ID:<input type="text" name="employeeId" value="333" readonly autofocus />
+        <br />
+        <br />
+        Phone number<input type="text" name="phone number" maxlength="10" minlength="10" >
+        <br />
+        <br />
+        Password:<input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and one lowercase letter and at least 8 characters">
+        <br />
+        <br />
+        Indian<input type="radio" name="indian" value="yes" checked>yes
+        <input type="radio" name="indian" value="no">no
+        <br />
+        <br />
+        select Country
+        <input type="checkbox" name="india" value="india" checked />India
+        <input type="checkbox" name="usa" value="USA" checked />USA
+        <input type="checkbox" name="japan" value="japan" />Japan
+        <br />
+        <br />
+        <select>
+            <option value="Delhi">Delhi</option>
+            <option value="Noida">Noida</option>
+            <option value="pune" selected>Pune</option>
+            <option value="Mumbai">Mumbai</option>
+        </select>
+        <br />
+        <br />
+
+        Covid dose:<input type="checkbox" name="covid" value="covid" disabled />
+        <br />
+        <br />
+        <input type="reset" value="reset" />
+        <br />
+        <br />
+        <input type="submit" value="Register" />
+    </form>
+</body>
+
+</html>
