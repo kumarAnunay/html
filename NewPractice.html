@@ -1,0 +1,15 @@
+<script>
+    function canConvertString(str1, str2) {
+        const sortedStr1 = str1.split('').sort().join('');
+        const sortedStr2 = str2.split('').sort().join('');
+
+        return sortedStr1 === sortedStr2;
+    }
+
+    const str1 = "abcdef";
+    const str2 = "bcdafee";
+    const str3 = "xyz";
+    console.log(canConvertString(str1, str2));
+    console.log(canConvertString(str1, str3));
+
+</script>
